@@ -344,3 +344,343 @@ aside a ion-icon{
     }
 }
 
+/* Main */
+
+main>.row:first-child,
+main>.row:first-child>.container{
+    height: 90px;
+}
+
+main>.row:first-child>.container>.col{
+    padding: 20px 10px 0;
+    height: 100%;
+}
+
+main>.row:first-child>.container>.col:first-child{
+    width: 75%;
+    float: left;
+}
+
+main>.row:first-child>.container>.col:first-child>ul li{
+    width: 20%;
+    float: left;
+    text-align: right;
+}
+
+main>.row:first-child>.container>.col:first-child>ul li h3{
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+main>.row:first-child>.container>.col:first-child>ul li a{
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+}
+
+main>.row:first-child>.container>.col:first-child>ul li a:hover{
+    text-decoration: underline;
+}
+
+main>.row:first-child>.container>.col:first-child>ul li a img{
+    border: 3px solid transparent;
+}
+
+main>.row:first-child>.container>.col:first-child>ul li a:hover img{
+    border: 3px solid #ffde00;
+}
+
+main>.row:first-child>.container>.col:first-child>ul li .country-code{
+    display: block;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+main>.row:first-child>.container>.col:last-child{
+    width: 25%;
+    float: right;
+}
+
+main>.row:nth-child(2)>.container>.col{
+    padding-top: 20px;
+    float: left;
+}
+
+main>.row:nth-child(2)>.container>.col:first-child{
+    width: 75%;
+}
+
+main>.row:nth-child(2)>.container>.col:last-child{
+    width: 25%;
+}
+
+main>.row:nth-child(2)>.container>.col:last-child svg{
+    height: 30px;
+}
+
+main>.row:nth-child(2)>.container>.col:last-child>ul{
+    border-top: 1px solid #ececec;
+}
+
+main>.row:nth-child(2)>.container>.col:last-child>ul>li{
+    display: table;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    width: 100%;      
+    border-bottom: 1px solid #ccc;
+}
+
+main>.row:nth-child(2)>.container>.col:last-child>ul>li:hover{
+    background-color: #525252;
+}
+
+main>.row:nth-child(2)>.container>.col:last-child>ul>li:hover a,
+main>.row:nth-child(2)>.container>.col:last-child>ul>li:hover svg{
+    color: #ff9d1e;
+    fill: #ff9d1e;
+}
+
+main>.row:nth-child(2)>.container>.col:last-child>ul>li>a{
+    display: table-row;
+    text-decoration: none;
+    color: black;
+}
+
+main>.row:nth-child(2)>.container>.col:last-child>ul>li>a>div{
+    display: table-cell;
+    padding: 10px 10px 10px 20px;
+    vertical-align: middle;
+    line-height: 1.1rem;
+}
+
+main>.row:nth-child(2)>.container>.col:last-child>ul>li>a>div:first-child{
+    width: 90%;
+}
+
+#slider{
+    position: relative;
+    margin-top: 20px;
+    padding: 0 10px;
+    height: 388px;
+}
+
+#slider-wrapper{
+    height: 100%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;    
+}
+
+.slide{
+    position: relative;
+    scroll-snap-align: center;
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 388px;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+}
+
+.slide .prev, .slide .next{
+    position: absolute;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    background-color: rgba(128,130,133,0.9);
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 100%;
+}
+
+.slide .prev:hover, .slide .next:hover{
+    background-color: rgba(128,130,133,0.8);
+}
+
+.slide .prev{
+    left: 20px;
+}
+
+.slide .next{
+    right: 20px;
+}
+
+.slide ion-icon{
+    color: white;
+    vertical-align: sub;
+}
+
+#slide-1{
+    background-image: url('https://boc.lk/image/data/Banner/200Day_investment-2022-Sept-Web.jpg');
+}
+
+#slide-2{
+    left: 100%;
+    background-image: url('https://boc.lk/image/data/Banner/Pita-pita_season-3-2022-E.jpg');
+}
+
+#slide-3{
+    left: 200%;
+    background-image: url('https://boc.lk/image/data/Banner/SDA-2022-09.jpeg');
+}
+
+#slide-4{
+    left: 300%;
+    background-image: url('https://boc.lk/image/data/Banner/Top1000_2022-En_1.jpg');
+}
+
+#slide-5{
+    left: 400%;
+    background-image: url('https://boc.lk/image/data/Banner/green-loan-2022.jpeg');
+}
+
+#slide-6{
+    left: 500%;
+    background-image: url('https://boc.lk/image/data/Banner/power-branch-close-2022-En-1.jpg');
+}
+
+#slides-wrapper{
+    width: 100%;
+    position: relative;
+    animation-name: slider-animation;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slider-animation {
+    0%, 10%{
+        left: 0;
+    }
+
+    16%, 26%{
+        left: -100%;
+    }
+
+    32%, 48%{
+        left: -200%;
+    }
+
+    54%, 66%{
+        left: -300%;
+    }
+
+    74%, 84%{
+        left: -400%;
+    }
+
+    92%,100%{
+        left: -500%;
+    }
+}
+
+main>.row:nth-child(3){
+    padding: 20px 0;
+}
+
+main>.row:nth-child(3)>.container>.col{
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+main>.row:nth-child(3)>.container>.col>.wrapper{
+    overflow: hidden;
+    position: relative;
+}
+
+main>.row:nth-child(3)>.container>.col>.wrapper>.overlay{
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 30px;
+}
+main>.row:nth-child(3)>.container>.col>.wrapper>.overlay p{
+    padding-top: 6px;
+}
+
+main>.row:nth-child(3)>.container>.col>.wrapper>.overlay p:hover{
+    color: #ffde00;
+    cursor: pointer;
+}
+
+main>.row:nth-child(3)>.container>.col:hover img{
+    transform: scale(1.2);
+}
+
+main>.row:nth-child(3)>.container>.col:hover .overlay{
+    display: block;
+}
+
+main>.row:nth-child(3)>.container>.col:hover .topic{
+    background-color: #ffde00;
+    color: #1f1f1f;
+}
+
+main>.row:nth-child(3)>.container>.col img{
+    display: block;
+    width: 100%;
+    transition: transform 500ms;
+}
+
+main>.row:nth-child(3)>.container>.col .topic{
+    position: relative;
+    padding: 10px;
+    text-align: center;
+    background-color: #525252;
+    color: white;
+    z-index: 1;
+}
+
+main>.row:last-child{
+    padding-bottom: 10px;
+}
+
+main>.row:last-child>.container>.col{
+    float: left;
+}
+
+main>.row:last-child>.container>.col:first-child,
+main>.row:last-child>.container>.col:last-child{
+    padding: 10px;
+    width: 25%;
+    text-align :right;
+    color: #1f1f1f;
+}
+
+main>.row:last-child>.container>.col:first-child>p:first-of-type,
+main>.row:last-child>.container>.col:last-child>p:first-of-type{
+    padding-bottom: 15px;
+    font-size: 18px;
+}
+
+main>.row:last-child>.container>.col:first-child>p:last-of-type{
+    font-size: 20px;
+}
+
+main>.row:last-child>.container>.col:first-child>p:last-of-type ion-icon{
+    color: #8a8a8a;
+    padding-right: 15px;
+}
+
+main>.row:last-child>.container>.col:nth-child(2){
+    width: 50%;
+    text-align: center;
+    padding-top: 13px;
+}
+
+main>.row:last-child>.container>.col:last-child>p:last-of-type{
+    font-size: 0.7rem;
+    color: #8a8a8a;
+}
+
