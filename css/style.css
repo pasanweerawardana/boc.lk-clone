@@ -274,3 +274,73 @@ footer>.row::after{
     bottom: 0;
 }
 
+/* aside */
+
+aside{
+    font-weight: bold;
+    background-color: #1f1f1f;
+    position: fixed;
+    padding: 10px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    transform: rotate(270deg);
+    right: -38px;
+    bottom: 25%;
+    z-index: 9;
+}
+
+aside:hover{
+    right: -31px;
+}
+
+aside a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+}
+
+aside a ion-icon{
+    color: black;
+    font-size: 1rem;
+    vertical-align: middle;
+}
+
+#bubble-wrapper{
+    position: relative;
+    display: inline-block;
+    background-color:#ffde00;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    padding: 4px;
+}
+
+#bubble-wrapper::before{
+    display: block;
+    content: "";
+    background-color: #ffdd0057;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 100%;
+    width: 5px;
+    height: 5px;
+    animation-name: wave;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes wave {
+    from{
+        transform: scale(0);
+        opacity: 1;
+    }
+    to{
+        transform: scale(15);
+        opacity: 0.6;
+    }
+}
+
